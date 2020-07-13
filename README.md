@@ -3,6 +3,10 @@
 
 This is a Buzzfeed-style quiz that places you on the side of Tik Tok you are in. If you're unfamiliar with the language of 'sides of TikTok', look [here](https://stayhipp.com/news/the-sides-of-tiktok/).
 
+## Notes about hosting
+
+It should be hosted [here](https://dartmouth-cs52-20x.github.io/lab2-quizzical-arjunsrini/), and someone else on slack verified that they could see it, but some of the content that shows up locally may not show up there. I'm not sure why that error is happening.
+
 ## Extra Credit: Why link JS at end of body?
 
 JS is linked at the end because you don't want the user to interact with parts of the page that may trigger JS functions before the styling of the page has loaded.
