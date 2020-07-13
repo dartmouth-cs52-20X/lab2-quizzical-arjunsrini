@@ -5,7 +5,7 @@ This is a Buzzfeed-style quiz that places you on the side of Tik Tok you are in.
 
 ## Notes about hosting
 
-It should be hosted [here](https://dartmouth-cs52-20x.github.io/lab2-quizzical-arjunsrini/), and someone else on slack verified that they could see it, but some of the content that shows up locally may not show up there. I'm not sure why that error is happening.
+It should be hosted [here](https://dartmouth-cs52-20x.github.io/lab2-quizzical-arjunsrini/), and someone else on slack verified that they could see it, but some of the content that shows up locally may not show up there. I'm not sure why that error is happening, but I know the quiz works as expected when I look at it locally, so I think it's a GitHub issue and maybe would be easier to grade/view after cloning the repository and looking at it locally.
 
 ## Extra Credit: Why link JS at end of body?
 
