@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--
+    Buzzfeed Quiz
+    Arjun Srinivasan, July 2020
+-->
+<html>
+    <head>
+        <title>
+            Tik Tok Quiz
+        </title>
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+
+        <header>
+            <h1>Which side of Tik Tok are you on?</h1>
+        </header>
+
+        <div class="quiz-content">
+
+            <!-- Question 1 -->
+            <h2>1. Which of these creators shows up the most on your FYP?</h2>
+            <br>
+            <div class="q1-ans">
+                <input class="ans" type="radio" id="q1-a1" name="creator" value="straight"/>
+                <label class="ans" for="q1-a1">Addison Re</label><br>      
+        
+                <input class="ans" type="radio" id="q1-a2" name="creator" value="genz"/>
+                <label class="ans" for="q1-a2">The Mason Twins</label><br>
+        
+                <input class="ans" type="radio" id="q1-a3" name="creator" value="wholesome"/>
+                <label class="ans" for="q1-a3">@jeremyscheck</label><br>
+        
+                <input class="ans" type="radio" id="q1-a4" name="creator" value="millenial"/>
+                <label class="ans" for="q1-a4">@ladyefron</label><br>
+            </div>
+            <br>
+
+            <!-- Question 2 -->
+            <h2>2. Which of these audios is always stuck in your head?</h2>
+            <br>
+            <div class="q2-ans">
+                <input class="ans" type="radio" id="q2-a1" name="fav_audio_1" value="lgbt"/>
+                <label class="ans" for="q2-a1">
+                    <audio controls>
+                        <source src="content/girlsplaywboys.mp3">
+                    </audio>
+                    <p>Boys & Girls ft. Pia Mia - will.i.am</p>
+                </label><br>
+                <input class="ans" type="radio" id="q2-a2" name="fav_audio_1" value="wholesome"/>
+                <label class="ans" for="q2-a2">
+                    <audio controls>
+                        <source src="content/myumyu.mp3">
+                    </audio>
+                    <p>original sound - @maybe.itsmk</p>
+                </label><br>
+
+                <input class="ans" type="radio" id="q2-a3" name="fav_audio_1" value="straight"/>
+                <label class="ans" for="q2-a3">
+                    <audio controls>
+                        <source src="content/renegade.mp3">
+                    </audio>
+                    <p>Lottery - K CAMP</p>
+                </label><br>
+
+                <input class="ans" type="radio" id="q2-a4" name="fav_audio_1" value="avatar"/>
+                <label class="ans" for="q2-a4">
+                    <audio controls>
+                        <source src="content/zukorap.mp3">
+                    </audio>
+                    <p>zuko rap - @bustinbantos</p>
+                </label><br>
+            </div>
+            <br>
+
+            <!-- Question 3 -->
+            <h2>3. Which of these would you share or like?</h2>
+            <br>
+            <div class="q3-ans">
+                <input class="ans" type="radio" id="q3-a1" name="fav_tiktok_p1" value="avatar"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q3-a1"></label>
+                    <video controls class="tiktok">
+                        <source src="content/avatar.mp4">
+                    </video>
+                </label><br>
+
+                <input class="ans" type="radio" id="q3-a2" name="fav_tiktok_p1" value="cs"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q3-a2"></label>
+                    <video controls class="tiktok">
+                        <source src="content/bugs.mp4">
+                    </video>
+                </label><br>
+
+                <input class="ans" type="radio" id="q3-a3" name="fav_tiktok_p1" value="frog"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q3-a3"></label>
+                    <video controls class="tiktok">
+                        <source src="content/frog.mp4">
+                    </video>
+                </label><br>
+
+                <input class="ans" type="radio" id="q3-a4" name="fav_tiktok_p1" value="wholesome"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q3-a4"></label>
+                    <video controls class="tiktok">
+                        <source src="content/grey.mp4">
+                    </video>
+                </label><br>
+            </div>
+            <br>
+
+            <!-- Question 4 -->
+            <h2>4. Which of these would you share or like? (pt 2)</h2>
+            <br>
+            <div class="q4-ans">
+                <input class="ans" type="radio" id="q4-a1" name="fav_tiktok_p2" value="cs"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q4-a1"></label>
+                    <video controls class="tiktok">
+                        <source src="content/js.mp4">
+                    </video>
+                </label><br>
+
+                <input class="ans" type="radio" id="q4-a2" name="fav_tiktok_p2" value="avatar"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q4-a2"></label>
+                    <video controls class="tiktok">
+                        <source src="content/zuko.mp4">
+                    </video>
+                </label><br>
+
+                <input class="ans" type="radio" id="q4-a3" name="fav_tiktok_p2" value="frog"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q4-a3"></label>
+                    <video controls class="tiktok">
+                        <source src="content/frog2.mp4">
+                    </video>
+                </label><br>
+
+                <input class="ans" type="radio" id="q4-a4" name="fav_tiktok_p2" value="millenial"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q4-a4"></label>
+                    <video controls class="tiktok">
+                        <source src="content/marriage.mp4">
+                    </video>
+                </label><br>
+            </div>
+            <br>
+
+            <!-- Question 5 -->
+            <h2>5. Which of these best uses the "gimme love - joji" audio?</h2>
+            <br>
+            <div class="q5-ans">
+                <input class="ans" type="radio" id="q5-a1" name="best_useof_sound" value="cs"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q5-a1"></label>
+                    <video controls class="tiktok">
+                        <source src="content/gimmelove-cs.mp4">
+                    </video>
+                </label><br>
+
+                <input class="ans" type="radio" id="q5-a2" name="best_useof_sound" value="genz"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q5-a2"></label>
+                    <video controls class="tiktok">
+                        <source src="content/gimmelove-genz.mp4">
+                    </video>
+                </label><br>
+
+                <input class="ans" type="radio" id="q5-a3" name="best_useof_sound" value="lgbt"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q5-a3"></label>
+                    <video controls class="tiktok">
+                        <source src="content/gimmelove-lgbt.mp4">
+                    </video>
+                </label><br>
+
+                <input class="ans" type="radio" id="q5-a4" name="best_useof_sound" value="wholesome"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q5-a4"></label>
+                    <video controls class="tiktok">
+                        <source src="content/dogswim.MP4">
+                    </video>
+                </label><br>
+            </div>
+            <br>
+
+            
+            <!-- Question 6 -->
+            <h2>6. Which of these has the best original audio?</h2>
+            <br>
+            <div class="q6-ans">
+                <input class="ans" type="radio" id="q6-a1" name="fav_audio_2" value="cs"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q6-a1"></label>
+                    <video controls class="tiktok">
+                        <source src="content/whatsacomputer.mp4">
+                    </video>
+                </label><br>
+
+                <input class="ans" type="radio" id="q6-a2" name="fav_audio_2" value="wholesome"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q6-a2"></label>
+                    <video controls class="tiktok">
+                        <source src="content/grizzly.mp4">
+                    </video>
+                </label><br>
+
+                <input class="ans" type="radio" id="q6-a3" name="fav_audio_2" value="millenial"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q6-a3"></label>
+                    <video controls class="tiktok">
+                        <source src="content/2000and.mp4">
+                    </video>
+                </label><br>
+
+                <input class="ans" type="radio" id="q6-a4" name="fav_audio_2" value="straight"/>
+                <label class="ans" for="tiktokoutline">
+                    <label class="cbox" for="q6-a4"></label>
+                    <video controls class="tiktok">
+                        <source src="content/wifesfatherinlaw.mp4">
+                    </video>
+                </label><br>
+            </div>
+            <br>
+
+            <!-- Question 7 -->
+            <h2>7. Which of these things have you done (or are you most likely to do) bc of tiktok?</h2>
+            <br>
+            <div class="q7-ans">
+                <input class="ans" type="radio" id="q7-a1" name="tiktoktrend" value="lgbt genz"/>
+                <label class="ans" for="q7-a1">Shave part of your eyebrow. </label><br>
+        
+                <input class="ans" type="radio" id="q7-a2" name="tiktoktrend" value="frog"/>
+                <label class="ans" for="q7-a2">Get a frog. </label><br>
+        
+                <input class="ans" type="radio" id="q7-a3" name="tiktoktrend" value="straight millenial"/>
+                <label class="ans" for="q7-a3">Make dalgona coffee. </label><br>
+        
+                <input class="ans" type="radio" id="q7-a4" name="tiktoktrend" value="genz"/>
+                <label class="ans" for="q7-a4">Dye your hair. </label><br>
+            </div>
+            <br>
+
+            <!-- <h3 id="result">nothing here yet</h3> -->
+            <div class="submission" >
+                <div class="popup">
+                    <span class="popuptext" id="myPopup">Answer all the questions!</span>
+                </div>
+
+                <button id="submit">Which side am I?</button>
+
+                <!-- adapted from https://www.w3schools.com/howto/howto_css_modals.asp -->
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="modal-body">
+                            <div class="result" id="frog">
+                                <img src="content/frog.jpg"/>
+                                <h2>You are on the frog side of Tik Tok!</h2>
+                            </div>
+                            <div class="result" id="genz">
+                                <img src="content/genz.jpg"/>
+                                <h2>You are on the Gen Z side of Tik Tok!</h2>
+                            </div>
+                            <div class="result" id="straight">
+                                <img src="content/straight.jpg"/>
+                                <h2>You are on the straight side of Tik Tok!</h2>
+                            </div>
+                            <div class="result" id="millenial">
+                                <img src="content/millenial.jpg"/>
+                                <h2>You are on the millenial side of Tik Tok!</h2>
+                            </div>
+                            <div class="result" id="lgbt">
+                                <img src="content/lgbt.png"/>
+                                <h2>You are on the lgbtq+ side of Tik Tok!</h2>
+                            </div>
+                            <div class="result" id="wholesome">
+                                <img id="greypic" src="content/wholesome.jpeg"/>
+                                <h2>You are on the wholesome side of Tik Tok!</h2>
+                            </div>
+                            <div class="result" id="cs">
+                                <img src="content/cs.jfif"/>
+                                <h2>You are on the cs side of Tik Tok!</h2>
+                            </div>
+                            <div class="result" id="avatar">
+                                <img src="content/avatar.jpg"/>
+                                <h2>You are on the avatar side of Tik Tok!</h2>
+                            </div>                                                                                                                                                                                                                             
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>

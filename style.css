@@ -1,0 +1,342 @@
+/* full document styles */
+html {
+    /* scroll-behavior: smooth; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: #000;
+    /* background-image: linear-gradient(to bottom right, #69C9D0, #EE1D52); */
+    color: #ffffff;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* header style */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    height: 300px;
+    margin-bottom: 60px;
+    margin-left:0;
+    margin-right:0;
+
+    background-image: url(content/ttbackground.jpg);
+    background-size: contain, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+/* quiz content - default styles */
+.quiz-content {
+    /* margin-top: 20px; */
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+div[class*="-ans"] {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+input[type=radio] { 
+    display: none;
+}
+
+label.ans {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    vertical-align: middle;
+}
+
+input[type=radio]:checked + label {
+    /* background-color:#aaa; */
+    box-shadow: 10px 10px #EE1D52, -10px -10px #69C9D0;
+    animation: none;
+}
+
+@keyframes answerchoice {
+    from {box-shadow: none;}
+    to {box-shadow: 10px 10px #EE1D52, -10px -10px #69C9D0;}
+}
+
+.ans:hover {
+    animation: answerchoice 1s ease infinite alternate;
+}
+
+
+/* styles for background images (q1) */
+label[for="q1-a1"] {
+    background-image: url(content/addison.jpeg);
+    background-size: contain;
+    color: white;
+    background-color: midnightblue;
+}
+
+label[for="q1-a2"] {
+    background-image: url(content/masontwins.jpeg);
+    background-size: contain;
+    color: white;
+}
+
+label[for="q1-a3"] {
+    background-image: url(content/jeremy.webp);
+    background-size: contain;
+    color: white;
+}
+
+label[for="q1-a4"] {
+    background-image: url(content/ladyefron.jfif);
+    background-size: contain;
+    color: white;
+}
+
+/* styles for background images (q7) */
+label[for="q7-a1"] {
+    background-image: url(content/eyebrow.jpg);
+}
+
+label[for="q7-a2"] {
+    background-image: url(content/frog.jpg);
+}
+
+label[for="q7-a3"] {
+    background-image: url(content/dalgona.jpg);
+}
+
+label[for="q7-a4"] {
+    background-image: url(content/bluehair.jpg);
+}
+
+label[for*="q7-"] {
+    background-size: cover;
+    color: white;
+    font-size: 15px;
+}
+
+/* styles for answer text for q1, q7 */
+label.ans[for*="q1-"],
+label.ans[for*="q7-"] {
+    padding-top: 0;
+    padding-bottom: 0;
+    /* padding-bottom: 30px; */
+    margin-bottom: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* styles for audio answers */
+label.ans[for*="q2-"] {
+    height: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* padding-bottom: 30px; */
+    margin-bottom: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* styles for tik tok answers */
+label.ans[for*="tiktokoutline"] {
+    /* 2/10th phone screen ratio */
+    width: 216px;
+    height: 384px;
+    /* to keep it 2 by 2 */
+    margin: 50px;
+}
+
+input[type=radio]:checked + label > label {
+    background-color:rgb(21, 99, 27);
+}
+
+.tiktok {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+label.cbox {
+    background-color: white;
+    
+    position: absolute;
+    display: flex;
+    margin-left: 179px; 
+    margin-top: 6px;
+
+    width: 25px;
+    height: 25px;
+    border: 3px solid #000;
+    z-index: 1;
+}
+
+
+/* for submit button*/
+.submission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
+button {
+    transition-duration: 0.4s;
+    border: 2px solid white;
+    background-color: inherit;
+    width: 300px;
+    height: 100px;
+    text-decoration-color: white;
+    color:white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: white;
+    animation: answerchoice 1s ease infinite alternate;
+    /* box-shadow: 10px 10px #EE1D52, -10px -10px #69C9D0; */
+}
+
+/* styles for modal after clicking submit */
+/* adapted from https://www.w3schools.com/howto/howto_css_modals.asp */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  
+/* Modal Body */
+.modal-body {
+    background-image: linear-gradient(to bottom right, #69C9D0, #EE1D52);
+    padding: 2px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+  
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 1s
+}
+  
+  /* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* style for popup when click submit but haven't answered all Qs */
+/* popup styles */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+  
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+/* fix wholesome result size */
+#greypic {
+    width: 500px;
+}
